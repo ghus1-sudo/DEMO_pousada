@@ -145,6 +145,9 @@ nav a:hover::after {
 
     cursor: pointer;
 
+    object-fit: contain;
+    box-sizing: border-box;
+
     transition: 0.3s;
 }
 
@@ -775,11 +778,11 @@ footer a:hover {
     }
 
     .zap {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
 
-        right: 15px;
-        bottom: 15px;
+        right: 10px;
+        bottom: 10px;
     }
 
     footer {
