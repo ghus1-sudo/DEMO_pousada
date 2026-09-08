@@ -10,10 +10,10 @@ zap.addEventListener("click", function(){
 const sobreImagem = document.querySelector("#sobreImagem");
 
 const imagens = [
-    "./IMG/pousada_externa.webp",
-    "./IMG/pousada_externa2.jpg",
-    "./IMG/pousada_externa3.jpg",
-    "./IMG/pousada_externa4.jpg"
+    "pousada_externa.webp",
+    "pousada_externa2.jpg",
+    "pousada_externa3.jpg",
+    "pousada_externa4.jpg"
 ];
 
 let indice = 0;
