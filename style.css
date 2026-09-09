@@ -644,7 +644,7 @@ footer {
     padding: 60px 8% 25px;
 
     background-color: var(--back-dark);
-    color: var(--text);
+    color: var(--white);
 }
 
 .footer-container {
