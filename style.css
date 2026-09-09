@@ -799,9 +799,40 @@ footer a:hover {
     }
 
     footer {
-        flex-direction: column;
+        padding: 50px 6%;
+    }
 
-        gap: 20px;
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .footer-logo,
+    .footer-links,
+    .footer-localizacao,
+    .footer-contato {
+        text-align: center;
+    }
+
+
+    .footer-links,
+    .footer-contato {
+        align-items: center;
+    }
+
+
+    .footer-bottom {
+        margin-top: 35px;
+
+        padding-top: 18px;
+    }
+
+
+    .footer-bottom p {
+        font-size: 10px;
     }
 
 }
