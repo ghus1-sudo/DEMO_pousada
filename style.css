@@ -643,7 +643,7 @@ footer {
     width: 100%;
     padding: 60px 8% 25px;
 
-    background-color: #EDE4D3;
+    background-color: var(--back-dark);
     color: var(--text);
 }
 
