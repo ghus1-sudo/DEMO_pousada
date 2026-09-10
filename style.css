@@ -249,35 +249,16 @@ nav a:hover::after {
     overflow: hidden;
 }
 
+.sobre-img {
+    overflow: hidden;
+}
+
 .sobre-img img {
     width: 100%;
     height: 550px;
     object-fit: cover;
-
     opacity: 1;
-    transition: opacity .7s ease;
-}
-
-.sobre-img img.fade {
-    opacity: 0;
-}
-
-.sobre-img img.trocar {
-    opacity: 0;
-    transform: scale(1.03);
-}
-
-.sobre-img img {
-    width: 100%;
-    height: 550px;
-
-    object-fit: cover;
-
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.sobre-content {
-    max-width: 520px;
+    transition: opacity 0.35s ease;
 }
 
 .sobre-content .tag,
