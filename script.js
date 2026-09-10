@@ -18,23 +18,28 @@ const imagens = [
 
 let indice = 0;
 
-setInterval(function() {
+setInterval(() => {
 
-    sobreImagem.classList.add("fade");
+    indice++;
 
-    setTimeout(function() {
+    if (indice >= imagens.length) {
+        indice = 0;
+    }
 
-        indice++;
+    const novaImagem = new Image();
 
-        if (indice >= imagens.length) {
-            indice = 0;
-        }
+    novaImagem.src = imagens[indice];
 
-        sobreImagem.src = imagens[indice];
+    novaImagem.onload = () => {
 
-        sobreImagem.classList.remove("fade");
+        sobreImagem.style.opacity = "0";
 
-    }, 700);
+        setTimeout(() => {
+            sobreImagem.src = imagens[indice];
+            sobreImagem.style.opacity = "1";
+        }, 175);
+
+    };
 
 }, 4000);
 
