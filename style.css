@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +42,6 @@ body {
 }
 
 
-
 .sobre-content,
 .sobre-img,
 .quarto,
@@ -72,12 +70,11 @@ body {
     transform: translateY(0);
 }
 
+
 a {
     color: inherit;
     text-decoration: none;
 }
-
-
 
 
 header {
@@ -114,7 +111,6 @@ nav a {
     transition: 0.3s;
 
     color: #176B72;
-    text-decoration: none;
 
     position: relative;
 }
@@ -157,7 +153,6 @@ nav a:hover::after {
     cursor: pointer;
 
     object-fit: contain;
-    box-sizing: border-box;
 
     transition: 0.3s;
 }
@@ -231,7 +226,6 @@ nav a:hover::after {
 
 
 
-
 .sobre {
     min-height: 700px;
 
@@ -249,15 +243,14 @@ nav a:hover::after {
     overflow: hidden;
 }
 
-.sobre-img {
-    overflow: hidden;
-}
-
 .sobre-img img {
     width: 100%;
     height: 550px;
+
     object-fit: cover;
+
     opacity: 1;
+
     transition: opacity 0.35s ease;
 }
 
@@ -312,7 +305,6 @@ nav a:hover::after {
 
 
 
-
 .acomodacoes {
     padding: 110px 8%;
 
@@ -353,7 +345,6 @@ nav a:hover::after {
 
     transition: 0.5s;
 }
-
 
 .quarto-content {
     padding: 30px;
@@ -396,6 +387,52 @@ nav a:hover::after {
 }
 
 
+
+.informacoes {
+    padding: 110px 8%;
+
+    background-color: var(--back-body);
+}
+
+.informacoes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+
+    border-top: 1px solid rgba(48, 54, 50, 0.15);
+}
+
+.informacao {
+    padding: 35px 30px 35px 0;
+
+    border-bottom: 1px solid rgba(48, 54, 50, 0.15);
+}
+
+.informacao:nth-child(3n + 2),
+.informacao:nth-child(3n + 3) {
+    padding-left: 30px;
+}
+
+.informacao h3 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+    font-weight: normal;
+
+    margin: 20px 0 10px;
+}
+
+.informacao p {
+    color: var(--text-light);
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
 .experiencias {
     padding: 110px 8%;
 
@@ -422,12 +459,6 @@ nav a:hover::after {
     padding-top: 25px;
 }
 
-.experiencia span {
-    font-size: 12px;
-
-    opacity: 0.6;
-}
-
 .experiencia h3 {
     font-family: Georgia, serif;
 
@@ -443,7 +474,6 @@ nav a:hover::after {
     font-size: 15px;
     line-height: 1.7;
 }
-
 
 
 
@@ -468,10 +498,6 @@ nav a:hover::after {
     object-fit: cover;
 
     transition: 0.4s;
-}
-
-.galeria-grid img:hover {
-    transform: scale(1.02);
 }
 
 .galeria-grid img:nth-child(1) {
@@ -554,6 +580,71 @@ nav a:hover::after {
 }
 
 
+.faq {
+    padding: 110px 8%;
+
+    background-color: var(--back-body);
+}
+
+.faq-list {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    border-top: 1px solid rgba(48, 54, 50, 0.15);
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(48, 54, 50, 0.15);
+}
+
+.faq-item summary {
+    min-height: 75px;
+
+    padding: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary span {
+    color: var(--accent);
+
+    font-size: 22px;
+    font-weight: normal;
+
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary span {
+    transform: rotate(45deg);
+}
+
+.faq-item p {
+    max-width: 700px;
+
+    padding: 0 50px 25px 0;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
 
 .cta {
     padding: 130px 8%;
@@ -619,12 +710,13 @@ nav a:hover::after {
 
 
 
-
 footer {
     width: 100%;
+
     padding: 60px 8% 25px;
 
     background-color: var(--back-dark);
+
     color: var(--white);
 }
 
@@ -635,12 +727,11 @@ footer {
     margin: 0 auto;
 
     display: grid;
+
     grid-template-columns: 2fr 1fr 2fr 1fr;
 
     gap: 50px;
 }
-
-
 
 .footer-logo h2 {
     font-family: Georgia, serif;
@@ -660,14 +751,12 @@ footer {
     line-height: 1.6;
 }
 
-
 footer h3 {
     font-size: 13px;
     font-weight: bold;
 
     margin-bottom: 18px;
 }
-
 
 footer p {
     font-size: 13px;
@@ -691,8 +780,6 @@ footer a {
 
     font-size: 13px;
 
-    text-decoration: none;
-
     transition:
         color 0.3s ease,
         transform 0.3s ease;
@@ -708,19 +795,12 @@ footer a:hover {
     margin-bottom: 12px;
 }
 
-.footer-localizacao a {
-    color: var(--accent);
-}
-
-.footer-contato a {
-    color: var(--white);
-}
-
 .footer-bottom {
     width: 100%;
     max-width: 1200px;
 
     margin: 50px auto 0;
+
     padding-top: 20px;
 
     border-top: 1px solid rgba(48, 54, 50, 0.15);
@@ -767,8 +847,19 @@ footer a:hover {
         height: 450px;
     }
 
-}
+    .informacoes-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .informacao:nth-child(3n + 2),
+    .informacao:nth-child(3n + 3) {
+        padding-left: 0;
+    }
+
+    .informacao:nth-child(even) {
+        padding-left: 30px;
+    }
+}
 
 @media (max-width: 600px) {
 
@@ -825,49 +916,73 @@ footer a:hover {
         bottom: 50px;
     }
 
-    footer {
-    padding: 50px 6% 20px;
+    .informacoes-grid {
+        grid-template-columns: 1fr;
     }
-    
+
+    .informacao,
+    .informacao:nth-child(3n + 2),
+    .informacao:nth-child(3n + 3),
+    .informacao:nth-child(even) {
+        padding-left: 0;
+    }
+
+    .faq {
+        padding: 80px 6%;
+    }
+
+    .faq-item summary {
+        font-size: 14px;
+
+        min-height: 70px;
+    }
+
+    .faq-item p {
+        padding-right: 20px;
+    }
+
+    footer {
+        padding: 50px 6% 20px;
+    }
+
     .footer-container {
         grid-template-columns: 1fr;
-    
+
         gap: 35px;
-    
+
         text-align: center;
     }
-    
+
     .footer-logo p {
         max-width: 300px;
-    
+
         margin: 0 auto;
     }
-    
+
     .footer-links,
     .footer-contato {
         align-items: center;
     }
-    
+
     .footer-localizacao {
         text-align: center;
     }
-    
+
     footer a {
         width: auto;
     }
-    
+
     footer a:hover {
         transform: none;
     }
-    
+
     .footer-bottom {
         margin-top: 40px;
-    
+
         padding-top: 18px;
     }
-    
+
     .footer-bottom p {
         font-size: 10px;
     }
-
 }
