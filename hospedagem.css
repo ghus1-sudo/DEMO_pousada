@@ -126,7 +126,7 @@ nav a:hover::after {
             rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.15)
         ),
-        url("pousada.jpg");
+        url("pousada_externa4.jpg");
 
     background-size: cover;
     background-position: center;
