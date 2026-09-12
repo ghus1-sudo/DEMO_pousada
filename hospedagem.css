@@ -116,9 +116,9 @@ nav a:hover::after {
 
 
 .hospedagem-hero {
-    min-height: 420px;
+    min-height: calc(100vh - 80px);
 
-    padding: 80px 8%;
+    padding: 8%;
 
     display: flex;
     align-items: center;
