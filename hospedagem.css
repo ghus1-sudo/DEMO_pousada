@@ -1,5 +1,7 @@
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -24,31 +26,47 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    background-color: var(--back-body);
+    color: var(--text);
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 header {
     width: 100%;
-    min-height: 80px;
+    height: 80px;
 
-    padding: 20px 8%;
-
-    background-color: var(--back-footer-header);
+    padding: 0 7%;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    gap: 30px;
+    background-color: var(--back-body);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
 }
 
 
-.logo {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-.logo h1 {
+header h1 {
     font-family: Georgia, serif;
 
     font-size: 28px;
@@ -60,25 +78,39 @@ header {
 
 nav {
     display: flex;
-    align-items: center;
-
-    gap: 25px;
+    gap: 32px;
 }
-
 
 nav a {
-    color: inherit;
-
-    text-decoration: none;
-
     font-size: 14px;
-
     transition: 0.3s;
-}
 
+    color: #176B72;
+
+    position: relative;
+}
 
 nav a:hover {
     color: var(--accent);
+}
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--accent);
+
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 
@@ -358,7 +390,7 @@ nav a:hover {
 }
 
 
-/* BOTÃO NORMAL */
+
 
 .btn {
     display: inline-block;
@@ -383,7 +415,7 @@ nav a:hover {
 }
 
 
-/* ESCOLHER */
+
 
 .btn-escolher {
     padding: 13px 20px;
@@ -404,7 +436,7 @@ nav a:hover {
 }
 
 
-/* ENVIAR */
+
 
 .btn-enviar {
     width: 100%;
@@ -577,9 +609,9 @@ footer {
 
     padding: 50px 8%;
 
-    background-color: var(--back-footer-header);
+    background-color: var(--back-dark);
 
-    color: #333;
+    color: var(--white);
 }
 
 
@@ -632,16 +664,22 @@ footer p {
 
 
 footer a {
-    color: inherit;
+    width: fit-content;
 
-    text-decoration: none;
+    color: var(--white);
 
-    transition: 0.3s;
+    font-size: 13px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
 }
 
 
 footer a:hover {
     color: var(--accent);
+
+    transform: translateX(3px);
 }
 
 
