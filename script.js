@@ -49,7 +49,7 @@ setInterval(() => {
 
 
 const elementos = document.querySelectorAll(
-    ".sobre-content, .sobre-img, .quarto, .experiencia, .galeria-grid img, .localizacao-content, .mapa, .cta-content"
+    ".sobre-content, .sobre-img, .quarto, .experiencia, .galeria-grid img, .localizacao-content, .mapa, .cta-content, .section-title, .informacao, summary"
 );
 
 const observer = new IntersectionObserver((entries) => {
