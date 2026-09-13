@@ -744,13 +744,11 @@ footer {
     margin-bottom: 15px;
 }
 
-footer p{
-    color: var(--text-light2);
-}
-
 .footer-logo p {
     max-width: 250px;
 
+    color: var(--text-light2);
+    
     font-size: 13px;
     line-height: 1.6;
 }
@@ -797,6 +795,8 @@ footer a:hover {
 
 .footer-localizacao p {
     margin-bottom: 12px;
+
+    color: var(--text-light2);
 }
 
 .footer-bottom {
@@ -814,6 +814,8 @@ footer a:hover {
 
 .footer-bottom p {
     font-size: 11px;
+
+    color: var(--text-light2);
 }
 
 
