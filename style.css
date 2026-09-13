@@ -9,7 +9,7 @@
     --back-section: #F1E9DC;
     --back-dark: #28332F;
     --text: #303632;
-    --text-light: #77746E;
+    --text-light: #c7ba9c;
     --accent: #A47C52;
     --white: #FFFFFF;
 }
@@ -657,6 +657,8 @@ nav a:hover::after {
 
     background-size: cover;
     background-position: center;
+
+    background-color: gray;
 
     color: white;
 
