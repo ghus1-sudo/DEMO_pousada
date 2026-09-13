@@ -11,9 +11,9 @@ const sobreImagem = document.querySelector("#sobreImagem");
 
 const imagens = [
     "pousada_externa.webp",
-    "pousada_externa2.jpg",
-    "pousada_externa3.jpg",
-    "pousada_externa4.jpg"
+    "pousada_externa2.webp",
+    "pousada_externa3.webp",
+    "pousada_externa4.webp"
 ];
 
 let indice = 0;
