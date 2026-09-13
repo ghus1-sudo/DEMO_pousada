@@ -655,13 +655,6 @@ nav a:hover::after {
 .cta {
     padding: 130px 8%;
 
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45)
-        ),
-        url("../IMG/cta.jpg");
-
     background-size: cover;
     background-position: center;
 
