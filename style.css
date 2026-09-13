@@ -9,7 +9,8 @@
     --back-section: #F1E9DC;
     --back-dark: #28332F;
     --text: #303632;
-    --text-light: #c7ba9c;
+    --text-light: #77746E;
+    --text-light2: #c7ba9c;
     --accent: #A47C52;
     --white: #FFFFFF;
 }
@@ -183,7 +184,7 @@ nav a:hover::after {
             rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.15)
         ),
-        url("pousada.jpg");
+        url("pousada.webp");
 
     background-size: cover;
     background-position: center;
@@ -743,10 +744,12 @@ footer {
     margin-bottom: 15px;
 }
 
+footer p{
+    color: var(--text-light2);
+}
+
 .footer-logo p {
     max-width: 250px;
-
-    color: var(--text-light);
 
     font-size: 13px;
     line-height: 1.6;
