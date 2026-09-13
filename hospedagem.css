@@ -10,7 +10,7 @@
     --back-section: #F1E9DC;
     --back-dark: #28332F;
     --text: #303632;
-    --text-light: #77746E;
+    --text-light: #c7ba9c;
     --accent: #A47C52;
     --white: #FFFFFF;
 }
@@ -589,7 +589,7 @@ nav a:hover::after {
 .form-aviso {
     text-align: center;
 
-    font-size: 11px;
+    font-size: 12px;
 
     opacity: 0.55;
 
@@ -645,6 +645,8 @@ footer p {
     line-height: 1.6;
 
     opacity: 0.7;
+
+    color: var(--text-light);
 }
 
 
